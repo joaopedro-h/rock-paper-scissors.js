@@ -1,0 +1,60 @@
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(252, 160, 217), rgb(0, 0, 0));
+}
+
+main{
+    background-color: rgb(207, 207, 207);
+    padding: 30px;
+    margin: auto;
+    margin-top: 10%;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+/*Configurações dos botões.*/
+button{
+    height: 50px;
+    width: 105px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button:hover{
+    height: 53px;
+    width: 107px;
+    transition: 0.3s;
+}
+
+
+/*Configuração do resultado da jogada.*/
+#informacoes{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    margin-top: 20%;
+    
+}
+
+span{
+    padding: 5px;
+    font-weight: bold;
+}
