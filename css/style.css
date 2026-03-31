@@ -5,15 +5,33 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgb(252, 160, 217), rgb(0, 0, 0));
+    background: linear-gradient(60deg, #571c0a, #7e3815, #b56020, #f89a2f, #ffdf53);
+}
+
+header{
+    color: #351106;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+header:hover{
+    cursor: pointer;
+}
+
+
+/*Configurações do menu principal.*/
+h1{
+    color: #571c0a;
 }
 
 main{
-    background-color: rgb(207, 207, 207);
-    padding: 30px;
+    background-color: #fff4dc;
+    padding: 45px;
     margin: auto;
-    margin-top: 10%;
-    width: 400px;
+    margin-top: 50px;
+    width: 500px;
     height: 300px;
     text-align: center;
     border: 2px solid black;
@@ -23,11 +41,13 @@ main{
 
 /*Configurações dos botões.*/
 button{
+    background-color: #e08d2e;
+    color: rgb(0, 0, 0);
     height: 50px;
     width: 105px;
     margin-top: 10px;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 15px;  
     
 }
 
@@ -38,23 +58,38 @@ button{
 }
 
 button:hover{
+    background-color: #b56020;
     height: 53px;
     width: 107px;
     transition: 0.3s;
 }
 
 
-/*Configuração do resultado da jogada.*/
+/*Configuração do resultado da jogada e placar.*/
+#area-resultado{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px; 
+    
+}
+
 #informacoes{
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: auto;
-    margin-top: 20%;
     
 }
 
 span{
+    color: #571c0a;
     padding: 5px;
     font-weight: bold;
+}
+
+
+#placar{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
 }
